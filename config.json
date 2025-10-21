@@ -1,13 +1,12 @@
 {
   "inbounds": [
     {
-      "port": 443,
+      "port": 80,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
             "id": "0fb17b72-5e17-4b5c-97f6-18ff1d57a6d7",
-            "level": 0,
             "email": "user@railway.app"
           }
         ],
@@ -17,15 +16,17 @@
         "network": "ws",
         "security": "none",
         "wsSettings": {
-          "path": "/vless"
+          "path": "/vless",
+          "headers": {
+            "Host": "ghost-hacking.up.railway.app"
+          }
         }
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
 }
