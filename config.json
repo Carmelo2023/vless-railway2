@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 80,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -14,11 +14,15 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vless-railway2-production.up.railway.app",
+          "allowInsecure": false
+        },
         "wsSettings": {
           "path": "/vless",
           "headers": {
-            "Host": "ghost-hacking.up.railway.app"
+            "Host": "vless-railway2-production.up.railway.app"
           }
         }
       }
