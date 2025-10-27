@@ -1,13 +1,14 @@
 {
   "inbounds": [
     {
-      "port": "$PORT",
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
             "id": "0fb17b72-5e17-4b5c-97f6-18ff1d57a6d7",
-            "email": "user@railway.app"
+            "level": 0,
+            "email": "carmelodesouza24@gmail.com"
           }
         ],
         "decryption": "none"
@@ -15,22 +16,16 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "vless-railway2-production.up.railway.app",
-          "allowInsecure": false
-        },
         "wsSettings": {
-          "path": "/vless",
-          "headers": {
-            "Host": "vless-railway2-production.up.railway.app"
-          }
+          "path": "/vless"
         }
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {}
     }
   ]
 }
