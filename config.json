@@ -1,23 +1,27 @@
 {
   "inbounds": [
     {
-      "port": 443,
+      "port": 0,
+      "listen": "0.0.0.0",
       "protocol": "vless",
       "settings": {
         "clients": [
           {
             "id": "0fb17b72-5e17-4b5c-97f6-18ff1d57a6d7",
             "level": 0,
-            "email": "carmelodesouza24@gmail.com"
+            "email": "user@example.com"
           }
         ],
         "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
+        "security": "none",
         "wsSettings": {
-          "path": "/vless"
+          "path": "/vless",
+          "headers": {
+            "Host": "vless-railway2-production-dc1a.up.railway.app"
+          }
         }
       }
     }
