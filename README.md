@@ -14,7 +14,7 @@ Déploiement automatique sur Railway d'un serveur VLESS avec Xray.
 2. Déploie sur [Railway](https://railway.app)
 3. Configure ton client avec:
    - UUID: `0fb17b72-5e17-4b5c-97f6-18ff1d57a6d7`
-   - Host: `agence.orange.cd.railway.app`
+   - Host: `ghosthacking.railway.app`
    - Port: 443
    - Path: `/ray`
 
