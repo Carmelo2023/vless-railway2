@@ -1,13 +1,19 @@
 {
+  "log": {
+    "access": "/dev/null",
+    "error": "/dev/null",
+    "loglevel": "none"
+  },
   "inbounds": [
     {
-      "port": "$PORT",
+      "port": 3000,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
             "id": "0fb17b72-5e17-4b5c-97f6-18ff1d57a6d7",
-            "flow": "xtls-rprx-vision"
+            "level": 0,
+            "email": "user@example.com"
           }
         ],
         "decryption": "none"
@@ -23,7 +29,8 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {}
     }
   ]
 }
